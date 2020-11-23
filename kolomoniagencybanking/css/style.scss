@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+  html {
+    scroll-behavior: smooth;
+   
+    }
+    
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden !important;
+  }
+  a.active {
+  color: #ff7a00 !important;
+  }
+  $primarycolor: #001e89;
+  $seccolor: #ff7a00;
+  $seccolor2: #ffffff;
+  $seccolor3: #383838;
+  $footercolor: #fafaf9;
+  $textcolor: #f2f2f2;
+  nav {
+    background-color: $primarycolor;
+    }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .bcg {
+    background-image: url("../images/header.svg");
+    background-position: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+  }
+  
+  .nav-link,
+  .navbar-brand,
+  .btns {
+    color: $seccolor2;
+  }
+  .navbar-brand:hover {
+    color: $seccolor2;
+  }
+  .nav-link:hover {
+    color: $seccolor;
+  }
+  .butns {
+    background: $seccolor;
+    width: 9.25rem;
+    height: 2.7rem;
+    border-radius: 20px 20px 0px 20px;
+    border: none;
+    padding: 0.625rem;
+    margin-left: 12.5rem;
+    color: $seccolor2;
+  }
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $seccolor2;
+  }
+  .details h1 {
+    font-size:2.5rem;
+  }
+  .features {
+    @extend.details;
+    flex: 1;
+    justify-content: space-evenly;
+    color: $seccolor3;
+  }
+  
+  
+  .btn {
+    width: 12.5rem;
+    height: 3.125rem;
+    border: 5px solid $seccolor;
+    border-radius: 20px 20px 20px 0px;
+    color: $seccolor;
+    padding: 5px 5px;
+  }
+  .downloadbtn {
+    @extend.btn;
+    background: $seccolor;
+    display: inline;
+    border: none;
+    color: $textcolor;
+  }
+  .brandcolor {
+    color: $seccolor;
+    font-weight: bolder;
+  }
+  .mouse {
+    position: absolute;
+    translate: (-50%, -50%);
+    bottom: 0;
+    left: 50%;
+  }
+  .box {
+    background: #f2f2f2;
+    border-radius: 40px 40px 40px 0px;
+    width:25rem;
+    height:9.375rem;
+  }
+  
+  .detail {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .detail p{
+  font-size:15px;
+  color:#000000;
+  }
+  .title {
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height:2.8125rem;
+  }
+  .rows {
+    @extend.details;
+    flex: 1;
+    color: red;
+  }
+  
+  footer {
+    background-color: $primarycolor;
+    color: $footercolor;
+    height: 60vh;
+  }
+  .footer {
+    background: #001048;
+  
+    color: $seccolor2;
+  }
+  .move {
+    margin-top: 5rem;
+  }
+  .font-weight-bolder {
+    font-size: 1.25rem;
+  }
+  li{
+  padding:0.9375rem;
+  }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 50%;
+    }
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .details h1 {
+      font-size: 1.875rem;
+      line-height: 3.125rem;
+    }
+    .details p {
+    font-size:0.625rem;
+    
+    }
+    .title,
+    .box p {
+      font-size:0.625rem;
+     
+    }
+    h3,
+    h2 {
+      font-size: 1.5628rem;
+    }
+    .foot h3 {
+      font-size: 0.9375rem;
+    }
+    .mouse {
+      bottom: 10%;
+    }
+    .btns,
+    .downloadbtn,
+    .buttons button {
+      width: 9.25rem;
+      height:2.8125rem;
+    }
+    .butns {
+      width: 7.25rem;
+      height:3.975rem;
+      margin-left:0.3125rem;
+    }
+    .box {
+      width:20.75rem;
+      height:100px;
+      padding:0.625rem;
+      box-sizing:border-box;
+    }
+    .foot,
+    footer {
+      height: auto;
+    }
+    .images {
+      width: 250px;
+    }
+    .image {
+      width: 150px;
+      margin-right: 150px;
+    }
+    .imagez{
+    width:30px;
+    }
+    .btns {
+      margin-left: 0px;
+      width: 5rem;
+      height: 2.5rem;
+    }
+    .features {
+      flex-wrap: wrap;
+    }
+    .detail {
+      justify-content: center;
+      align-items:center;
+      margin-top: 15px;
+    }
+    
+  }
+  @media only screen and (max-width: 768px) {
+    .features,.detail {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+  }
+  

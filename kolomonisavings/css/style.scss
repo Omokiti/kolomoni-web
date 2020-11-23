@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    
+   }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+ html{
+ scroll-behavior:smooth;
+ overflow-x: hidden;
+ }
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    }
+  a.active {
+  color: #ff7a00 !important;
+  }
+  $primarycolor: #001e89;
+  $seccolor: #ff7a00;
+  $seccolor2: #ffffff;
+  $seccolor3: #383838;
+  $footercolor: #fafaf9;
+  $textcolor: #f2f2f2;
+  nav {
+    background-color: $primarycolor;
+    }
+  .nav-link,
+.navbar-brand,
+.btns {
+  color: $seccolor2;
+}
+.navbar-brand:hover {
+  color: $seccolor2;
+}
+.nav-link:hover {
+  color: $seccolor;
+}
+  .bcg {
+    background-image: url("../images/mainbackground.svg");
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    }
+  .brandcolor {
+    color: $seccolor;
+    font-weight: bolder;
+  }
+  .butns {
+    background: $seccolor;
+    width: 9.25rem;
+    height: 2.7rem;
+    border-radius: 20px 20px 0px 20px;
+    border: none;
+    padding: 0.625rem;
+    color: $seccolor2;
+  }
+  .kard p {
+    font-size:1.125rem;
+    line-height: 1.3125rem;
+    padding: 1rem;
+   color:#000000;
+    text-overflow: ellipsis;
+  }
+  .kard-title{
+ font-weight:bold;
+ color:$seccolor3;
+  }
+  h2{
+  @extend.kard-title;
+  color:$seccolor3;
+  }
+  #howitworks {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: $seccolor3;
+  }
+  footer {
+    background-color: $primarycolor;
+    color: $footercolor;
+    height: 70vh;
+  }
+  footer span {
+    text-align: justify;
+  }
+  .footer {
+    background: #001048;
+    height: 4.357rem;
+    color: $seccolor2;
+  }
+  .move {
+    margin-top: 5rem;
+  }
+ 
+  .top-left {
+    position: absolute;
+    top: 200px;
+    left:80px;
+    }
+  .top-left h1{
+color:$seccolor2; 
+font-size:3.125rem;
+font-weight:900;
+}
+.top-left p{
+color:$seccolor2;
+font-size:1.25rem;
+}
+  .top-right {
+    position: absolute;
+    top:200px;
+    right: 66px;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .btn {
+    width: 12.5rem;
+    height: 3.125rem;
+    border: 5px solid $seccolor;
+    border-radius: 20px 20px 20px 0px;
+    color: $seccolor;
+    padding: 5px 5px;
+  }
+  .downloadbtn {
+    @extend.btn;
+    background: $seccolor;
+    display: inline;
+    border: none;
+    color: $textcolor;
+    margin-left:85px;
+  }
+  .kard p {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    padding: 1rem;
+   }
+  
+  @media only screen and (max-width:500px){
+ html,.top-left p{
+ font-size:50%;
+ }
+ .top-left h1{
+  font-size:1.25rem;
+ }
+ .top-left{
+ top:60px;
+ left:70px;
+ }
+ .top-right{
+ left:150px;
+ }
+ .downloadbtn{
+ margin-right:160px;
+ }
+ .detail{
+flex-wrap: wrap;
+margin:0 auto;
+ }
+ .kard{
+margin:0 auto;
+}
+.detail{
+margin-left:110px;
+}
+.downloadbtn{
+margin-right:200px;
+}
+.butns{
+
+margin-left:0;
+}
+
+  }
+  @media only screen and(max-width:768px){
+  html{
+  font-size:70%;
+  }
+  .top-left{
+  top:100px;
+  }
+  .top-left h1{
+    font-size:1.25rem;
+   }
+  }
+  
+  
+  
